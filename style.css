@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(actual.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar{
+    margin-top: 90px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+h1{
+    font-family: "Sevillana", serif;
+    font-size: 50px;
+    color: brown;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.day{
+    background: #d74c12;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.day:hover{
+    background: darkred;
+}
+
+.message{
+    font-size: 20px;
+    color: white;
+    background: brown;
+    visibility: hidden;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+}
